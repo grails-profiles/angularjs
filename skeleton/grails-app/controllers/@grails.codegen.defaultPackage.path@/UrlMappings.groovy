@@ -8,7 +8,7 @@ class UrlMappings {
         get "/$controller/$id(.$format)?"(action:"show")
         post "/$controller(.$format)?"(action:"save")
         put "/$controller/$id(.$format)?"(action:"update")
-        patch "/$controller/$id(.$format)?"(action:"update")
+        patch "/$controller/$id(.$format)?"(action:"patch")
 
         "/"(view: '/index')
         "500"(view: '/error')
