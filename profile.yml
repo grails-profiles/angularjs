@@ -1,7 +1,7 @@
 description: A profile for creating applications using AngularJS
 features:
     defaults:
-        - hibernate
+        - hibernate5
     required:
         - json-views
         - asset-pipeline
