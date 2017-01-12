@@ -235,15 +235,15 @@ a.navbar-brand {
 
 @media (max-width: 1010px) {
     .event-logo {
-        height: ;
+        height: 100px;
     }
-
 }
 
 @media (max-width: 690px) {
     .event-logo {
         height: 60px;
-    }}
+    }
+}
 
 @media (max-width: 475px) {
     .event-logo {
