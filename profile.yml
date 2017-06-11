@@ -3,16 +3,15 @@ features:
     defaults:
         - hibernate5
     required:
+        - gsp
         - json-views
         - asset-pipeline
 build:
     plugins:
-        - org.grails.grails-gsp
         - com.craigburke.karma
         - com.craigburke.client-dependencies
 dependencies:
     compile:
-        - "org.grails:grails-plugin-gsp"
         - "org.grails.plugins:angularjs-scaffolding:1.0.3"
     build:
         - "gradle.plugin.com.craigburke.gradle:karma-gradle:1.4.3"
