@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>Grails AngularJs Profile</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen, print" title="Style" charset="utf-8" />
+    <link rel="stylesheet" href="../css/pdf.css" type="text/css" media="print" title="PDF" charset="utf-8" />
+    <script src="../js/docs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.13/clipboard.min.js"></script>
+    <script type="text/javascript">
+        function addJsClass(el) {
+            var classes = document.body.className.split(" ");
+            classes.push("js");
+            document.body.className = classes.join(" ");
+        }
+    </script>
+</head>
+
+<body class="body" onload="addJsClass();">
+<div id="navigation">
+    <div class="navTitle">
+        
+        Grails AngularJs Profile
+    </div>
+    <div class="navLinks">
+        <ul>
+            <li>
+                <div id="nav-summary" onmouseover="toggleNavSummary(false)" onmouseout="toggleNavSummary(true)">
+                    <a href="../guide/index.html" class="button">Table of contents</a>
+                    <div id="nav-summary-childs" style="display:none;">
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="#introduction"><strong>1</strong><span>Introduction</span></a></div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="#profilename"><strong>2</strong><span>Profile Name</span></a></div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="#plugins"><strong>3</strong><span>Plugins</span></a></div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="#dateDataBinding"><strong>4</strong><span>Date Data Binding</span></a></div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="#profileinfo"><strong>5</strong><span>Profile Info</span></a></div>
+                        
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+
+<table id="colset" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td id="col1">
+            <div id="main" class="corner-all">
+
+                <div class="project">
+                    <h1>Grails AngularJs Profile</h1>
+                    <p></p>
+                    <p>A profile for creating applications using AngularJS</p>
+                    <p><strong>Version:</strong> 1.1.1.BUILD-SNAPSHOT</p>
+
+                </div>
+                
+                <div id="table-of-content">
+                    <h2>Table of Contents</h2>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#introduction"><strong>1</strong><span>Introduction</span></a></div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#profilename"><strong>2</strong><span>Profile Name</span></a></div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#plugins"><strong>3</strong><span>Plugins</span></a></div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#dateDataBinding"><strong>4</strong><span>Date Data Binding</span></a></div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#profileinfo"><strong>5</strong><span>Profile Info</span></a></div>
+                    
+                    <div style="clear:both" ></div>
+                </div>
+                
+                
+
+<h1 id="introduction">1 Introduction</h1>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/angularjs/edit/docs/src/main/docs/guide/introduction.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>Grails Profiles encapsulate project commands, templates and plugins. To create an application using the <code>angularjs</code> profile you can use
+the next command:</p>
+</div>
+<div class="paragraph">
+<p><code>grails create-app myapp --profile=angularjs</code></p>
+</div>
+
+
+<h1 id="profilename">2 Profile Name</h1>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/angularjs/edit/docs/src/main/docs/guide/profilename.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+This profile was orginally named <code>angular</code>. In order to be consistent with the Angular team’s guidelines on naming conventions it was renamed to <code>angularjs</code> Read about the <a href="http://grailsblog.objectcomputing.com/posts/2017/04/12/angular-profiles.html">angular profiles name changes</a>.
+</td>
+</tr>
+</table>
+</div>
+
+
+<h1 id="plugins">3 Plugins</h1>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/angularjs/edit/docs/src/main/docs/guide/plugins.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>If you create a Grails application with the <code>angularjs</code> profile you will see several
+dependencies included in <code>build.gradle</code>.
+ Some of those are of special interest while developing AngularJS application with Grails.</p>
+</div>
+<div class="paragraph">
+<p>In particular you will see a project and buildscript dependency to the <a href="https://grails-plugins.github.io/grails-angular-scaffolding/latest/#_introduction">Grails Angular Scaffolding Plugin</a>.
+This plugin provides basic CRUD abilities using Angular in a single page application.</p>
+</div>
+<div class="paragraph">
+<p>Read the <a href="http://grailsblog.objectcomputing.com/posts/2016/07/06/angular-scaffolding.html">Grails Angular Scaffolding blog post</a> to see an example.</p>
+</div>
+<div class="paragraph">
+<p>Additionally the project contains several dependencies worth mentioning:</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dependency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/craigburke/angular-template-asset-pipeline"><code>com.craigburke.angular:angular-template-asset-pipeline</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow our templates to be accessilbe client side</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/craigburke/angular-annotate-asset-pipeline"><code>com.craigburke.angular:angular-annotate-asset-pipeline</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Annotate our angular code for us.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/craigburke/js-closure-wrap-asset-pipeline"><code>com.craigburke:js-closure-wrap-asset-pipeline</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wrap each of our files in an inmediately invoked functional expression</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/craigburke/client-dependencies-gradle"><code>com.craigburke.gradle:client-dependencies</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Client Dependencies Gradle Plugin allows you to declare client side dependencies in build.gradle. You will find client side depedencies declared in <code>build.gradle</code> from npm.</p></td>
+</tr>
+</tbody>
+</table>
+
+
+<h1 id="dateDataBinding">4 Date Data Binding</h1>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/angularjs/edit/docs/src/main/docs/guide/dateDataBinding.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>The scaffolding relies on the default format Angular applies to
+dates when they are included in a request. In Grails 3.1.x and later, the date format is not included
+in the default list of date formats that databinding will attempt to use. You can easily
+add it yourself via configuration.</p>
+</div>
+<div class="listingblock">
+<div class="title">grails-app/conf/application.yml</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="yaml"><span class="key">grails</span>:
+     <span class="key">databinding</span>:
+         <span class="key">dateFormats</span>:
+             - <span class="string"><span class="delimiter">&quot;</span><span class="content">yyyy-MM-dd'T'HH:mm:ss.SSSX</span><span class="delimiter">&quot;</span></span></code></pre>
+</div>
+</div>
+
+
+<h1 id="profileinfo">5 Profile Info</h1>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/angularjs/edit/docs/src/main/docs/guide/profileinfo.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>You can always get information about the provided command and available features executing
+<code>grails profile-info angularjs</code></p>
+</div>
+<div class="paragraph">
+<p>You will see an output similar to:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">Profile: angularjs
+--------------------
+A profile for creating applications using AngularJS
+
+Provided Commands:
+--------------------
+* help - Prints help information for a specific command
+* open - Opens a file in the project
+* gradle - Allows running of Gradle tasks
+* create-controller - Creates a controller
+* create-domain-resource - Creates a domain class that represents a resource
+* create-functional-test - Creates an functional test
+* create-integration-test - Creates an integration test
+* create-interceptor - Creates an interceptor
+* create-restful-controller - Creates a REST controller
+* clean - Cleans a Grails application's compiled sources
+* compile - Compiles a Grails application
+* create-command - Creates an Application Command
+* create-domain-class - Creates a Domain Class
+* create-service - Creates a Service
+* create-unit-test - Creates a unit test
+* install - Installs a Grails application or plugin into the local Maven cache
+* assemble - Creates a JAR or WAR archive for production deployment
+* bug-report - Creates a zip file that can be attached to issue reports for the current project
+* console - Runs the Grails interactive console
+* create-script - Creates a Grails script
+* dependency-report - Prints out the Grails application's dependencies
+* list-plugins - Lists available plugins from the Plugin Repository
+* plugin-info - Prints information about the given plugin
+* run-app - Runs a Grails application
+* run-command - Executes Grails commands
+* run-script - Executes Groovy scripts in a Grails context
+* shell - Runs the Grails interactive shell
+* stats - Prints statistics about the project
+* stop-app - Stops the running Grails application
+* test-app - Runs the applications tests
+* generate-all - Generates a controller that performs REST operations
+* generate-controller - Generates a controller that performs REST operations
+* generate-functional-test - Generates a functional test for a controller that performs REST operations
+* generate-unit-test - Generates a unit test for a controller that performs REST operations
+* generate-views - Generates a controller that performs REST operations
+* create-ng-component - Creates an Angular directive
+* create-ng-controller - Creates an Angular controller
+* create-ng-directive - Creates an Angular directive
+* create-ng-domain - Creates an Angular domain
+* create-ng-module - Creates an Angular module
+* create-ng-service - Creates an Angular service
+
+Provided Features:
+--------------------
+* security - Adds Spring Security REST to the project
+* asset-pipeline - Adds Asset Pipeline to a Grails project
+* events - Adds support for the Grails EventBus abstraction
+* gsp - Adds support for GSP to the project
+* hibernate4 - Adds GORM for Hibernate 4 to the project
+* hibernate5 - Adds GORM for Hibernate 5 to the project
+* json-views - Adds support for JSON Views to the project
+* less-asset-pipeline - Adds LESS Transpiler Asset Pipeline to a Grails project
+* markup-views - Adds support for Markup Views to the project
+* mongodb - Adds GORM for MongoDB to the project
+* neo4j - Adds GORM for Neo4j to the project
+* rx-mongodb - Adds RxGORM for MongoDB to the project</code></pre>
+</div>
+</div>
+
+            </div>
+        </td>
+        <td id="col2">
+            <div class="local clearfix">
+                <div class="local-title">
+                    <a href="../guide/index.html" target="mainFrame">Quick Reference</a>
+                    <span class="toggle">(<a href="#" onclick="localToggle(); return false;">hide</a>)</span>
+                </div>
+                <div class="menu">
+                    
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<div id="footer">
+    
+    
+</div>
+
+
+</body>
+</html>
