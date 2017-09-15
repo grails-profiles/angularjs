@@ -1,0 +1,13 @@
+The scaffolding relies on the default format Angular applies to
+dates when they are included in a request. In Grails 3.1.x and later, the date format is not included
+in the default list of date formats that databinding will attempt to use. You can easily
+add it yourself via configuration.
+
+[source, yaml]
+.grails-app/conf/application.yml
+----
+grails:
+     databinding:
+         dateFormats:
+             - "yyyy-MM-dd'T'HH:mm:ss.SSSX"
+----

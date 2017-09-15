@@ -1,0 +1,4 @@
+Grails Profiles encapsulate project commands, templates and plugins. To create an application using the `angularjs` profile you can use
+the next command:
+
+`grails create-app myapp --profile=angularjs`

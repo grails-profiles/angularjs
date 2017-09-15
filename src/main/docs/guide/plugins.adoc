@@ -1,0 +1,25 @@
+If you create a Grails application with the `angularjs` profile you will see several
+dependencies included in `build.gradle`.
+ Some of those are of special interest while developing AngularJS application with Grails.
+
+In particular you will see a project and buildscript dependency to the https://grails-plugins.github.io/grails-angular-scaffolding/latest/#_introduction[Grails Angular Scaffolding Plugin].
+This plugin provides basic CRUD abilities using Angular in a single page application.
+
+Read the http://grailsblog.objectcomputing.com/posts/2016/07/06/angular-scaffolding.html[Grails Angular Scaffolding blog post] to see an example.
+
+Additionally the project contains several dependencies worth mentioning:
+
+|===
+|Dependency | Description
+|https://github.com/craigburke/angular-template-asset-pipeline[`com.craigburke.angular:angular-template-asset-pipeline`]
+| Allow our templates to be accessilbe client side
+|https://github.com/craigburke/angular-annotate-asset-pipeline[`com.craigburke.angular:angular-annotate-asset-pipeline`]
+|Annotate our angular code for us.
+|https://github.com/craigburke/js-closure-wrap-asset-pipeline[`com.craigburke:js-closure-wrap-asset-pipeline`]
+| Wrap each of our files in an inmediately invoked functional expression
+| https://github.com/craigburke/client-dependencies-gradle[`com.craigburke.gradle:client-dependencies`]
+| Client Dependencies Gradle Plugin allows you to declare client side dependencies in build.gradle. You will find client side depedencies declared in `build.gradle` from npm.
+|===
+
+
+
