@@ -1,12 +1,10 @@
 language: groovy
 sudo: false
 jdk:
-- openjdk8
+- oraclejdk8
 cache:
   directories:
   - "$HOME/.gradle"
-before_script:
-- rm -rf target
 script: "./travis-build.sh"
 env:
   global:
