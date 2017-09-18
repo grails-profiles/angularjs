@@ -98,28 +98,6 @@
                 ${content}
             </div>
         </td>
-        <td id="col2">
-            <div class="local clearfix">
-                <div class="local-title">
-                    <a href="${path}/guide/index.html" target="mainFrame">Quick Reference</a>
-                    <span class="toggle">(<a href="#" onclick="localToggle(); return false;">hide</a>)</span>
-                </div>
-                <div class="menu">
-                    <% for (cat in refMenu) { %>
-                    <div class="menu-block"><h1 class="menu-title" onclick="toggleRef(this.parentNode.childNodes[1])">${cat.name.encodeAsHtml()}</h1><div class="menu-sub">
-                        <% if (cat.usage.exists()) { %>
-                        <div class="menu-item"><a href="${path}/ref/${cat.name.encodeAsUrlPath().encodeAsHtml()}/Usage.html">Usage</a></div>
-                        <% } %>
-                        <% for (txt in cat.sections) { %>
-                        <div class="menu-item"><a href="${path}/ref/${cat.name.encodeAsUrlPath().encodeAsHtml()}/${txt.name[0..-6].encodeAsUrlPath().encodeAsHtml()}.html">${txt.name[0..-6].encodeAsHtml()}</a>
-                        </div>
-                        <% } %>
-                    </div>
-                    </div>
-                    <% } %>
-                </div>
-            </div>
-        </td>
     </tr>
 </table>
 
