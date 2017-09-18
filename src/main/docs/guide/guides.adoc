@@ -1,0 +1,9 @@
+To learn more about the AngularJS profiles, check the following Grails Guides & Quickcasts:
+
+* http://guides.grails.org/grails-quickcasts-angularjs-scaffolding-with-grails-3/guide/index.html[AngularJS Scaffolding with Grails 3]
+* http://guides.grails.org/grails-restapi-angularjs/guide/index.html[Building a REST API with Grails and AngularJS 1.x].
+
+The following blog posts would be useful too:
+
+* http://grailsblog.objectcomputing.com/posts/2017/04/12/angular-profiles.html[Grails Angular Profiles]
+* http://grailsblog.objectcomputing.com/posts/2016/07/06/angular-scaffolding.html[Grails Angular Scaffolding]
