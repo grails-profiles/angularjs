@@ -2,7 +2,7 @@ description: A profile for creating applications using AngularJS
 features:
     defaults:
         - hibernate5
-        - geb
+        - geb2
     required:
         - gsp
         - json-views
